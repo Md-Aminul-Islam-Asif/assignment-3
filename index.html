@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Assingment-3</title>
+      <title>Assignment-3</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/a19c932e29.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="assets/arrow-up-right-01.png" lang="image/x-icon">
+      <script>
+            tailwind.config = {
+                  theme: {
+                        extend: {
+                              colors: {
+                                    clifford: '#da373d',
+                              }
+                        }
+                  }
+            }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <style>
+            .manrope {
+                  font-family: "Manrope", sans-serif;
+            }
+      </style>
 </head>
-<body>
-      
+
+<body class="manrope">
+      <header class="md:container mx-auto md:px-[148px] md:pt-10">
+            <div class="navbar bg-base-100">
+                  <div class="navbar-start">
+
+                        <a class="btn btn-ghost text-3xl font-extrabold"><img src="assets/arrow-up-right-01.png" alt="">
+                              Rinterio</a>
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                              <li><a>Item 1</a></li>
+                              <li>
+                                    <details>
+                                          <summary>Parent</summary>
+                                          <ul class="p-2">
+                                                <li><a>Submenu 1</a></li>
+                                                <li><a>Submenu 2</a></li>
+                                          </ul>
+                                    </details>
+                              </li>
+                              <li><a>Item 3</a></li>
+                        </ul>
+                  </div>
+                  <div class="navbar-end">
+                        <a class="btn">Button</a>
+                  </div>
+                  <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M4 6h16M4 12h8m-8 6h16" />
+                              </svg>
+                        </div>
+                        <ul tabindex="0"
+                              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                              <li><a>Item 1</a></li>
+                              <li>
+                                    <a>Parent</a>
+                                    <ul class="p-2">
+                                          <li><a>Submenu 1</a></li>
+                                          <li><a>Submenu 2</a></li>
+                                    </ul>
+                              </li>
+                              <li><a>Item 3</a></li>
+                        </ul>
+                  </div>
+            </div>
+
+
+            <!-- banner part -->
+            <section class="container mx-auto">
+                  <div class="hero hero-content text-center flax flex-col">
+                        <div>
+                              <img class="items-cen" src="assets/banner.png" alt="house"><br>
+                        </div>
+                        <div>
+                              <h1 class="text-2xl md:text-6xl font-extrabold text-[#212121]">
+                                    A barn house of this design has a <br> striking appearance
+                              </h1><br>
+                              <p class="text-sm md:text-base font-medium text-[#494949]">Barn houses with striking
+                                    designs often feature a
+                                    combination of rustic elements and
+                                    modern
+                                    aesthetics. <br> The combination of natural materials like wood and stone with
+                                    contemporary
+                                    finishes like metal roofing or large glass windows can create a visually appealing
+                                    contrast.</p><br>
+                              <button class="btn font-extrabold text-xl rounded-3xl bg-[#ABEF5F80]">
+                                    View Details <img src="assets/arrow-up-right-01.png" alt=""></i>
+                              </button>
+                        </div>
+                  </div>
+            </section>
+      </header>
+      <main>
+            <section style="background-image: url(assets/bg.jpg);
+            image-rendering: auto;"
+                  class="container mx-auto mt-10 border-5  text-center md:border-8 border-white md:py-24 py-12 ">
+                  <div class="pb-8">
+                        <button class="py-4 font-bold px-8 md:text-base rounded-3xl bg-[#ABEF5F33] "><i
+                                    class="fa-solid fa-arrow-right"></i>Let’s Connect</button><br> <br>
+                        <h1 class="font-bold md:text-4xl text-3xl text-[#212121] ">Let’s Discuss Next Project</h1>
+                        <p class="font-medium text-base text-[#494949] p-5">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring
+                              weathered wood, sleek metal accents.</p>
+                  </div>
+                  <div class="grid md:grid-cols-2 grid-rows-8 justify-items-center gap-5 md:px-10">
+                        <input type="text" placeholder="First Name*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Last Name*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Phone Number*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Email Address*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+        
+                        <textarea class="resize-none textarea w-11/12 md:col-span-2 row-span-3 md:row-span-4 rounded-[32px] md:w-[80%]" placeholder="Write your message here"></textarea>
+                        <button class="w-auto md:w-[60%] md:col-span-2">
+                            <a class="btn w-full font-extrabold text-xl border-none rounded-3xl bg-[#ABEF5F]">Send Mail<img src="assets/arrow-up-right-02.png" alt=""></a>
+                        </button>
+                  </div>
+            </section>
+
+      </main>
+      <footer class="bg-[#1C1C1C] md:mx-auto md:px-[25%] py-24">
+            <section class="text-center">
+                  <div class="flex justify-center gap-1 items-center">
+                        <img src="assets/arrow-up-right-01.png" alt="">
+                        <a class="text-[#E9E9E9] font-extrabold text-3xl">Rinterio</a>
+                  </div><br>
+                  <p class="text-[#737373] text-base font-medium text-center md:px-[15%] px-5">Barn houses with striking
+                        designs often feature a
+                        combination of rustic elements and
+                        modern
+                        aesthetics.
+                  </p>
+                  <div class="text-[#E9E9E9] py-14">
+
+                        <ul class="md:flex justify-between space-y-6 md:space-y-0">
+                              <li><a class="hover:text-[#ABEF5F80]">Home</a></li>
+                              <li><a class="hover:text-[#ABEF5F80]">Services</a></li>
+                              <li><a class="hover:text-[#ABEF5F80]">Portfolio</a></li>
+                              <li><a class="hover:text-[#ABEF5F80]">Blogs</a></li>
+                              <li><a class="hover:text-[#ABEF5F80]">Contact Us</a></li>
+                        </ul>
+                  </div>
+                  <button class="bg-[#ABEF5F] font-extrabold text-xl btn rounded-3xl">Book Consult <img
+                              src="assets/arrow-up-right-02.png" alt=""></button>
+            </section>
+
+      </footer>
 </body>
+
 </html>
