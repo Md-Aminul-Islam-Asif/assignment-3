@@ -31,54 +31,54 @@
       </style>
 </head>
 
-<body class="manrope">
-      <header class="md:container mx-auto md:px-[148px] md:pt-10">
-            <div class="navbar bg-base-100">
+<body class="manrope ">
+      <header class="md:container mx-auto md:pt-10">
+            <nav class="navbar bg-base-100 ">
                   <div class="navbar-start">
 
-                        <a class="btn btn-ghost text-3xl font-extrabold"><img src="assets/arrow-up-right-01.png" alt="">
+                        <a class="btn btn-ghost text-3xl font-extrabold hover:bg-[#ABEF5F] "><img
+                                    src="assets/arrow-up-right-01.png" alt="">
                               Rinterio</a>
                   </div>
-                  <div class="navbar-center hidden lg:flex">
+                  <div class="navbar-center hidden lg:flex md:mr-18 ">
                         <ul class="menu menu-horizontal px-1">
-                              <li><a>Item 1</a></li>
-                              <li>
-                                    <details>
-                                          <summary>Parent</summary>
-                                          <ul class="p-2">
-                                                <li><a>Submenu 1</a></li>
-                                                <li><a>Submenu 2</a></li>
-                                          </ul>
-                                    </details>
+                              <li class="font-extrabold text-base text-[#494949] hover:bg-[#ABEF5F] "><a>Home</a></li>
+                              <li class="font-normal text-base text-[#737373] hover:bg-[#ABEF5F] "><a>Services</a></li>
+                              <li class="font-normal text-base text-[#737373] hover:bg-[#ABEF5F] "><a>Portfolio</a></li>
+                              <li class="font-normal text-base text-[#737373] hover:bg-[#ABEF5F] "><a>Blogs</a></li>
+                              <li class="font-normal text-base text-[#737373] hover:bg-[#ABEF5F] "><a>Contact Us</a>
                               </li>
-                              <li><a>Item 3</a></li>
                         </ul>
                   </div>
-                  <div class="navbar-end">
-                        <a class="btn">Button</a>
+                  <div class="navbar-end hidden md:flex gap-5">
+                        <button class="btn btn-slate-100 rounded-full hover:bg-[#ABEF5F]">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="btn btn-slate-100 rounded-full hover:bg-[#ABEF5F]">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <a class="btn border-none font-extrabold text-xl rounded-3xl bg-[#ABEF5F]">Book Consult <img
+                                    src="assets/arrow-up-right-02.png" alt=""></a>
                   </div>
-                  <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+
+                  <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-circle md:hidden ml-32  ">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 " fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
                                           d="M4 6h16M4 12h8m-8 6h16" />
                               </svg>
                         </div>
                         <ul tabindex="0"
                               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                              <li><a>Item 1</a></li>
-                              <li>
-                                    <a>Parent</a>
-                                    <ul class="p-2">
-                                          <li><a>Submenu 1</a></li>
-                                          <li><a>Submenu 2</a></li>
-                                    </ul>
-                              </li>
-                              <li><a>Item 3</a></li>
+                              <li class="hover:bg-[#ABEF5F]"><a>Home</a></li>
+                              <li><a>Services</a></li>
+                              <li><a>Portfolio</a></li>
+                              <li><a>Blogs</a></li>
+                              <li><a>Contact Us</a></li>
                         </ul>
                   </div>
-            </div>
+            </nav>
 
 
             <!-- banner part -->
@@ -89,7 +89,7 @@
                         </div>
                         <div>
                               <h1 class="text-2xl md:text-6xl font-extrabold text-[#212121]">
-                                    A barn house of this design has a <br> striking appearance
+                                    A barn house of this design has a striking appearance
                               </h1><br>
                               <p class="text-sm md:text-base font-medium text-[#494949]">Barn houses with striking
                                     designs often feature a
@@ -97,7 +97,8 @@
                                     modern
                                     aesthetics. <br> The combination of natural materials like wood and stone with
                                     contemporary
-                                    finishes like metal roofing or large glass windows can create a visually appealing
+                                    finishes <br> like metal roofing or large glass windows can create a visually
+                                    appealing
                                     contrast.</p><br>
                               <button class="btn font-extrabold text-xl rounded-3xl bg-[#ABEF5F80]">
                                     View Details <img src="assets/arrow-up-right-01.png" alt=""></i>
@@ -106,26 +107,138 @@
                   </div>
             </section>
       </header>
-      <main>
+      <main class="mt-28 bg-[#F4F4F4] ">
+            <!-- fast-sec -->
+            <section
+                  class="container mx-auto mt-24 md:mt-28 flex flex-col md:flex-row  md:text-left text-center w-11/12  ">
+                  <div class="hero">
+                        <div class="hero-container  flex-col md:flex-row gap-5 p-5">
+                              <div class="relative">
+                                    <div class="absolute hidden md:flex top-[-54px] left-[-34px] md:p-10 ">
+                                          <img class="w-24" src="assets/Vector.png" alt="">
+                                    </div><br>
+                                    <button
+                                          class="font-bold text-base text-[#494949] bg-[#FFFFFF] p-2 mb-3 rounded-3xl  md:mt-3 hover:bg-[#ABEF5F] "><i
+                                                class="fa-solid fa-arrow-right"></i> About Us</button><br>
+                                    <h1 class="font-extrabold text-4xl text-[#212121] ">We design thoughtful, liveable
+                                          spaces</h1><br>
+                                    <p class="font-medium text-base text-[#494949]"> We create spaces that blend
+                                          functionality with aesthetic appeal,<br> ensuring every
+                                          detail serves a purpose.
+
+                              </div><br>
+                              <div class="card card-side bg-white p-8">
+                                    <figure>
+                                          <img class="mb-16 p-5 md:mb-0" src="assets/commercial.png" alt="">
+                                    </figure>
+                                    <div class="card text-left w-full">
+                                          <h1>Commercial</h1>
+                                          <p>We create spaces that blend functionality with aesthetic appeal, <br>
+                                                ensuring
+                                                every detail serves a purpose.</p>
+                                    </div>
+                              </div><br>
+                              <div class="card card-side bg-white p-8">
+                                    <figure>
+                                          <img class="mb-16 md:mb-0 p-5" src="assets/residential.png" alt="">
+                                    </figure>
+                                    <div class="card text-left w-full">
+                                          <h1>Residential</h1>
+                                          <p>We specialize in designing residential spaces that embody comfort and
+                                                elegance, <br> tailored to your lifestyle..</p>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+                  <div class="m-10 md:ml-10 md:mt-24 md:w-[100%]">
+                        <img src="assets/Rectangle.png" alt="">
+                  </div>
+            </section>
+            <!--  -->
+            <section class="container mx-auto text-center mt-3 mb-6">
+                  <button
+                        class="font-bold text-base bg-[#FFFFFF] text-[#494949] rounded-3xl p-2 m-2 hover:bg-[#ABEF5F]"><i
+                              class="fa-solid fa-arrow-right"></i> How we works</button> <br>
+                  <h1 class="font-extrabold text-4xl text-[#212121] ">Our Works Process</h1>
+                  <p class="text-base font-medium mb-10">Efficiently designing, budgeting, and managing construction to
+                        deliver quality homes</p>
+                  <div class="grid md:grid-cols-4 justify-items-center gap-5">
+
+                        <div class="flex justify-start flex-col bg-[#E7C1D3] p-6  text-left rounded-2xl">
+                              <div>
+                                    <img src="assets//concept.png" alt="">
+                              </div>
+                              <div class="py-5">
+                                    <h1 class="font-extrabold">Concept</h1>
+                                    <p class="font-medium md:text-base textsm pt-4 text-[#494949]"> house is a
+                                          personalized space where functionality meets comfort, tailored to fit the
+                                          unique needs and lifestyle of its inhabitants</p>
+                              </div>
+                        </div>
+                        <div class="flex justify-start flex-col bg-[#EFDA6E] p-6  text-left rounded-2xl">
+                              <div>
+                                    <img src="assets/flow-chart.png" alt="">
+                              </div>
+                              <div class="py-5">
+                                    <h1 class="font-extrabold">Design Process</h1>
+                                    <p class="font-medium md:text-base textsm pt-4 text-[#494949]"> Collaboratively
+                                          translating ideas into detailed plans, ensuring every element of the house
+                                          aligns with the client's vision and practical needs</p>
+                              </div>
+                        </div>
+                        <div class="flex justify-start flex-col bg-[#A4DAC3] p-6  text-left rounded-2xl">
+                              <div>
+                                    <img src="assets/vision.png" alt="">
+                              </div>
+                              <div class="py-5">
+                                    <h1 class="font-extrabold">Supervision</h1>
+                                    <p class="font-medium md:text-base textsm pt-4 text-[#494949]">Ensuring quality and
+                                          precision through vigilant oversight at every stage of construction </p>
+                              </div>
+                        </div>
+                        <div class="flex justify-start flex-col bg-[#77AAEA] p-6  text-left rounded-2xl">
+                              <div>
+                                    <img src="assets//budget-planning.png" alt="">
+                              </div>
+                              <div class="py-5">
+                                    <h1 class="font-extrabold">Budget Planning</h1>
+                                    <p class="font-medium md:text-base textsm pt-4 text-[#494949]"> Strategically
+                                          allocating resources to balance cost efficiency with the desired quality and
+                                          scope of the project</p>
+                              </div>
+                        </div>
+
+                  </div>
+            </section>
+            <!-- input sec -->
             <section style="background-image: url(assets/bg.jpg);
             image-rendering: auto;"
-                  class="container mx-auto mt-10 border-5  text-center md:border-8 border-white md:py-24 py-12 ">
+                  class="container mx-auto mt-10 border-5 bg-cover  text-center md:border-8 border-white md:py-24 py-12 ">
                   <div class="pb-8">
-                        <button class="py-4 font-bold px-8 md:text-base rounded-3xl bg-[#ABEF5F33] "><i
-                                    class="fa-solid fa-arrow-right"></i>Let’s Connect</button><br> <br>
+                        <button class="py-4 font-bold px-8 md:text-base rounded-3xl bg-[#ABEF5F33] ">
+                              <i class="fa-solid fa-arrow-right"></i>Let’s Connect</button><br> <br>
                         <h1 class="font-bold md:text-4xl text-3xl text-[#212121] ">Let’s Discuss Next Project</h1>
-                        <p class="font-medium text-base text-[#494949] p-5">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring
+                        <p class="font-medium text-base text-[#494949] p-5">The barn house captivates with its blend of
+                              rustic charm and modern sophistication,<br> featuring
                               weathered wood, sleek metal accents.</p>
                   </div>
                   <div class="grid md:grid-cols-2 grid-rows-8 justify-items-center gap-5 md:px-10">
-                        <input type="text" placeholder="First Name*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
-                        <input type="text" placeholder="Last Name*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
-                        <input type="text" placeholder="Phone Number*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
-                        <input type="text" placeholder="Email Address*" class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
-        
-                        <textarea class="resize-none textarea w-11/12 md:col-span-2 row-span-3 md:row-span-4 rounded-[32px] md:w-[80%]" placeholder="Write your message here"></textarea>
+                        <input type="text" placeholder="First Name*"
+                              class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Last Name*"
+                              class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Phone Number*"
+                              class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+                        <input type="text" placeholder="Email Address*"
+                              class="input w-11/12 md:w-[60%] rounded-full font-medium text-base text-[#A0A0A0]" />
+
+                        <textarea
+                              class="resize-none textarea w-11/12 md:col-span-2 row-span-3 md:row-span-4 rounded-[32px] md:w-[80%]"
+                              placeholder="Write your message here"></textarea>
                         <button class="w-auto md:w-[60%] md:col-span-2">
-                            <a class="btn w-full font-extrabold text-xl border-none rounded-3xl bg-[#ABEF5F]">Send Mail<img src="assets/arrow-up-right-02.png" alt=""></a>
+                              <a class="btn w-full font-extrabold text-xl border-none rounded-3xl bg-[#ABEF5F]">Send
+                                    Mail<img src="assets/arrow-up-right-02.png" alt=""></a>
                         </button>
                   </div>
             </section>
